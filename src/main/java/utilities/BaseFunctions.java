@@ -83,16 +83,6 @@ public abstract class BaseFunctions {
 		}
 	}
 
-	// function to create folder
-	public void createFolder(String folderName) throws IOException {
-		File storageDirectory = new File(folderName);
-		if (!storageDirectory.exists()) {
-			if (!storageDirectory.mkdir()) {
-				throw new IOException("Error creating directory.");
-			}
-		}
-	}
-
 	// function to take screenshot
 	public Boolean takeScreenShot() {
 		try{
@@ -103,7 +93,7 @@ public abstract class BaseFunctions {
 			File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
 			Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
 			// take the tile and path
-			String path = "C://Pictures//"+timestamp.getTime()+".png";
+			String path = System.getProperty("user.dir") + File.separator + "Pictures" + File.separator +timestamp.getTime()+".png";
 			//Move image file to new destination
 			File DestFile = new File(path);
 			//Copy file at destination

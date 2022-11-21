@@ -17,7 +17,6 @@ public class MainRunner extends BaseTest {
 		searchPage.searchText();
 		searchPage.clickSearch();
 		searchPage.waitForPageToBeLoad();
-		searchPage.createfolder();
 		searchPage.takescreenShot();
 		searchPage.clickZoomIn();
 		searchPage.takescreenShot();

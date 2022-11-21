@@ -3,7 +3,6 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utilities.BaseFunctions;
-import java.io.IOException;
 
 /**
  * this class represents the main page
@@ -22,7 +21,6 @@ public class SearchPage extends BaseFunctions {
     By searchBTN = By.xpath("//button[@id='searchbox-searchbutton']");
     By zoomInBTN = By.xpath("//button[@id='widget-zoom-in']");
     By sideMenu = By.xpath("//div[@role='main']");
-    String folderName = "Pictures";
 
     // navigate to the site
     public Boolean getWebSite(String site) {
@@ -52,15 +50,6 @@ public class SearchPage extends BaseFunctions {
     // click the zoom in button
     public Boolean clickZoomIn(){
         return clickOnElement(zoomInBTN);
-    }
-
-    // create folder in C drive
-    public void createfolder(){
-        try {
-            createFolder(folderName);
-        } catch (IOException e) {
-            System.out.println("No folder was created");;
-        }
     }
 
 }
