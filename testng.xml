@@ -7,7 +7,7 @@
 		<listener class-name="listeners.ExtentListener" />
 	</listeners>
 
-	 	<test name="travel policy">
+	 	<test name="Google Maps">
 		<classes>
 			<class name="tests.MainRunner"></class>
 		</classes>
