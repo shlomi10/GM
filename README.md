@@ -4,14 +4,11 @@ Selenium test automation framework with Page Object Model design using Java + Ma
 Technologies/Tools used in building the framework
 =================================================
 - Intellij - IDE
-- Appium - Mobile Automation library
 - Maven - Build automation tool
 - Java - Programming language
 - TestNG - Test Management library
-- Log4J - Logging framework
 - Extent Reports - Reporting framework
-- Bitbucket / Git - Version control
-- Jenkins - CI/CD
+- Git - Version control
 
 Framework implements below best practices
 =========================================
@@ -22,7 +19,6 @@ Framework implements below best practices
 - Abstraction layer for UI commands like click, sendkeys, etc.
 - Parameterization using TestNG XML
 - Exception handling [using Try/Catch and TestNG Listener]
-- Demonstrates how to define UI elements that are common across pages (e.g. menu bar, side bar, etc.)
 - How to recover from test failure/ how to write fail safe test cases
 - Demonstrates how to effectively capture Screenshots/Videos
 - Integrated with Extent Reporting framework (supports parallel, screenshots, logging test steps)
