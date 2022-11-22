@@ -43,7 +43,7 @@ public class SearchPage extends BaseFunctions {
     }
 
     // take screenshot
-    public Boolean takescreenShot(){
+    public Boolean makeScreenShot(){
         return takeScreenShot();
     }
 

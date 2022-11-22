@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
@@ -17,12 +18,12 @@ public class MainRunner extends BaseTest {
 		searchPage.searchText();
 		searchPage.clickSearch();
 		searchPage.waitForPageToBeLoad();
-		searchPage.takescreenShot();
-		searchPage.clickZoomIn();
-		searchPage.takescreenShot();
-		searchPage.clickZoomIn();
-		searchPage.takescreenShot();
-		searchPage.clickZoomIn();
+		Assert.assertTrue(searchPage.makeScreenShot(),"Take screenshot didn't worked");
+		Assert.assertTrue(searchPage.clickZoomIn(), "zoom didn't worked");
+		Assert.assertTrue(searchPage.makeScreenShot(),"Take screenshot didn't worked");
+		Assert.assertTrue(searchPage.clickZoomIn(), "zoom didn't worked");
+		Assert.assertTrue(searchPage.makeScreenShot(),"Take screenshot didn't worked");
+		Assert.assertTrue(searchPage.clickZoomIn(), "zoom isn't worked");
 	}
 
 }
