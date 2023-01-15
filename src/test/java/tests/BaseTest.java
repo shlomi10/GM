@@ -8,26 +8,26 @@ import pages.SearchPage;
 
 public class BaseTest implements ITestListener {
 
-	WebDriver driver;
-	SearchPage searchPage;
+    WebDriver driver;
+    SearchPage searchPage;
 
-	@Parameters({ "browser" })
-	@BeforeTest(alwaysRun = true)
-	public void setup(String browser) {
+    @Parameters({"browser"})
+    @BeforeTest(alwaysRun = true)
+    public void setup(String browser) {
 
-		driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
-		// maximize the browser window
-		driver.manage().window().maximize();
+        // maximize the browser window
+        driver.manage().window().maximize();
 
-		searchPage = new SearchPage(driver);
-		
-	}
+        searchPage = new SearchPage(driver);
 
-	@AfterTest(alwaysRun = true)
-	public void close() {
-		driver.quit();
+    }
 
-	}
+    @AfterTest(alwaysRun = true)
+    public void close() {
+        driver.quit();
+
+    }
 
 }

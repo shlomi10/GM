@@ -1,4 +1,0 @@
-reportManager\ExtentManager.class
-utilities\BaseFunctions.class
-listeners\ExtentListener.class
-pages\SearchPage.class

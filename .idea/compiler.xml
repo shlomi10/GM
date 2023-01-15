@@ -7,8 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HarelInsurance" />
-        <module name="GM" />
+        <module name="Gm" />
       </profile>
     </annotationProcessing>
   </component>

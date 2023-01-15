@@ -12,14 +12,14 @@ Technologies/Tools used in building the framework
 
 Framework implements below best practices
 =========================================
-- Code reusability
+- Code re-usability
 - Code readability
 - Scalable automation (demonstrated using multiple test classes)
 - Uses explicit waits
 - Abstraction layer for UI commands like click, sendkeys, etc.
 - Parameterization using TestNG XML
 - Exception handling [using Try/Catch and TestNG Listener]
-- How to recover from test failure/ how to write fail safe test cases
+- How to recover from test failure/ how to write fail-safe test cases
 - Demonstrates how to effectively capture Screenshots/Videos
 - Integrated with Extent Reporting framework (supports parallel, screenshots, logging test steps)
 
